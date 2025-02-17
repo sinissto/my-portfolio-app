@@ -2,13 +2,16 @@ import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 import Social from "@/components/homepage/Social";
 import Photo from "@/components/homepage/Photo";
+import Stats from "@/components/homepage/Stats";
 
 export default function Home() {
   return (
     <section className={"h-full"}>
       <div className={"container mx-auto h-full"}>
         <div
-          className={"flex flex-col xl:flex-row items-center justify-between"}
+          className={
+            "flex flex-col xl:flex-row items-center justify-between xl:mb-24"
+          }
         >
           <div className={"text-center xl:text-left order-2 xl:order-none"}>
             <span className={"text-xl"}>Web Developer</span>
@@ -45,6 +48,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Stats />
     </section>
   );
 }
