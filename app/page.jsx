@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 import Social from "@/components/homepage/Social";
+import Photo from "@/components/homepage/Photo";
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
         <div
           className={"flex flex-col xl:flex-row items-center justify-between"}
         >
-          <div className={"text-center xl:text-left"}>
+          <div className={"text-center xl:text-left order-2 xl:order-none"}>
             <span className={"text-xl"}>Web Developer</span>
             <h1 className={"mb-6"}>
               Hello I'm <br />
@@ -39,7 +40,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div>photo</div>
+          <div className={"order-1 xl:order-none mb-8 xl:mb-0"}>
+            <Photo />
+          </div>
         </div>
       </div>
     </section>
